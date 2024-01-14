@@ -16,10 +16,10 @@
         <button class="R1C1" onclick="clearDisplay()">
             <p>C</p>
         </button>
-        <button class="R1C2">
-            <p><-- </p>
+        <button class="R1C2" onclick="backspace()">
+            <p>←</p>
         </button>
-        <button class="R1C3">
+        <button class="R1C3" onclick="setOperation('÷')">
             <p>÷</p>
         </button>
         <button class="R2C1" onclick="appendDisplay(7)">
@@ -31,8 +31,8 @@
         <button class="R2C3" onclick="appendDisplay(9)">
             <p>9</p>
         </button>
-        <button class="R2C4">
-            <p>X</p>
+        <button class="R2C4" onclick="setOperation('x')">
+            <p>x</p>
         </button>
         <button class="R3C1" onclick="appendDisplay(4)">
             <p>4</p>
@@ -45,7 +45,7 @@
         </button>
 
 
-        <button class="R3C4">
+        <button class="R3C4" onclick="setOperation('-')">
             <p>-</p>
         </button>
         <button class="R4C1" onclick="appendDisplay(1)">
@@ -57,13 +57,13 @@
         <button class="R4C3" onclick="appendDisplay(3)">
             <p>3</p>
         </button>
-        <button class="R4C4">
+        <button class="R4C4" onclick="setOperation('+')">
             <p>+</p>
         </button>
         <button class="R5C1" onclick="appendDisplay(0)">
             <p>0</p>
         </button>
-        <button class="R5C2">
+        <button class="R5C2" onclick="setOperation('=')">
             <p>=</p>
         </button>
     </div>
