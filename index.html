@@ -9,66 +9,65 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="display">
-            <p>0</p>
+            <p id="output">0</p>
         </div>
-        <div class="R1C1">
+        <button class="R1C1" onclick="clearDisplay()">
             <p>C</p>
-        </div>
-        <div class="R1C2">
+        </button>
+        <button class="R1C2">
             <p><-- </p>
-        </div>
-        <div class="R1C3">
+        </button>
+        <button class="R1C3">
             <p>÷</p>
-        </div>
-        <div class="R2C1">
+        </button>
+        <button class="R2C1" onclick="appendDisplay(7)">
             <p>7</p>
-        </div>
-        <div class="R2C2">
+        </button>
+        <button class="R2C2" onclick="appendDisplay(8)">
             <p>8</p>
-        </div>
-        <div class="R2C3">
+        </button>
+        <button class="R2C3" onclick="appendDisplay(9)">
             <p>9</p>
-        </div>
-        <div class="R2C4">
+        </button>
+        <button class="R2C4">
             <p>X</p>
-        </div>
-        <div class="R3C1">
+        </button>
+        <button class="R3C1" onclick="appendDisplay(4)">
             <p>4</p>
-        </div>
-        <div class="R3C2">
+        </button>
+        <button class="R3C2" onclick="appendDisplay(5)">
             <p>5</p>
-        </div>
-        <div class="R3C3">
+        </button>
+        <button class="R3C3" onclick="appendDisplay(6)">
             <p>6</p>
-        </div>
+        </button>
 
 
-        <div class="R3C4">
+        <button class="R3C4">
             <p>-</p>
-        </div>
-        <div class="R4C1">
+        </button>
+        <button class="R4C1" onclick="appendDisplay(1)">
             <p>1</p>
-        </div>
-        <div class="R4C2">
+        </button>
+        <button class="R4C2" onclick="appendDisplay(2)">
             <p>2</p>
-        </div>
-        <div class="R4C3">
+        </button>
+        <button class="R4C3" onclick="appendDisplay(3)">
             <p>3</p>
-        </div>
-        <div class="R4C4">
+        </button>
+        <button class="R4C4">
             <p>+</p>
-        </div>
-        <div class="R5C1">
+        </button>
+        <button class="R5C1" onclick="appendDisplay(0)">
             <p>0</p>
-        </div>
-        <div class="R5C2">
+        </button>
+        <button class="R5C2">
             <p>=</p>
-        </div>
+        </button>
     </div>
-
+    <script src="./main.js"></script>
 </body>
 
 </html>

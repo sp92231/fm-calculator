@@ -7,6 +7,9 @@
 :root {
     --color-gray: #d8d9db;
     --color-orange: #df974c;
+
+    --gradient-gray: rgba(216, 217, 219, 0.5);
+    --gradient-orange: rgba(223, 151, 76, 0.7)
 }
 
 body {
@@ -19,7 +22,6 @@ body {
 .container {
     width: 24rem;
     height: 36rem;
-    background-color: aqua;
     display: grid;
     grid-template-areas:
         "display display display display"
@@ -96,4 +98,14 @@ body {
     align-content: center;
     color: white;
     font-size: 35px;
+
+    &:hover {
+        background-color: var(--gradient-orange);
+    }
+}
+
+button {
+    &:hover {
+        background-color: var(--gradient-gray);
+    }
 }
