@@ -30,10 +30,6 @@ function appendDisplay(val) {
     updateDisplay();
 }
 
-
-
-
-
 function setOperation(op) {
     let total = 0;
     if (operator !== null) {
@@ -42,7 +38,7 @@ function setOperation(op) {
         input = [total.toString()];
         updateDisplay();
         operator = nextOperator;
-        input = [];
+        operator = null;
     }
     else {
         operator = op;
@@ -51,10 +47,9 @@ function setOperation(op) {
     }
 }
 
-
-
 function calculate() {
     let nextOperand = parseFloat(input.join(''));
+    input = [];
     switch (operator) {
         case '+':
             return currentOperand + nextOperand;
