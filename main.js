@@ -41,9 +41,14 @@ function setOperation(op) {
         operator = null;
     }
     else {
-        operator = op;
-        currentOperand = parseFloat(input.join(''));
-        input = [];
+        if (op === '=') {
+            return;
+        }
+        else {
+            operator = op;
+            currentOperand = parseFloat(input.join(''));
+            input = [];
+        }
     }
 }
 
